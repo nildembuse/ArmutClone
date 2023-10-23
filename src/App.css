@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-
+/* navbar kısmı baslangıc */
 .logo{
   display: flex;
   width: 120px;
@@ -21,7 +21,7 @@
 .linkler li{
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: black;
   font-weight: 700;
   text-transform: uppercase;
   margin-left: 15px;
@@ -78,7 +78,6 @@
     overflow: hidden;
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 .wrapper{
   padding: 21px 0 15px 0;
@@ -101,6 +100,9 @@
 .window-fix {
   margin-top: 15px;
 }
+/* navbar kısmı bitisi */
+
+
 /* .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }

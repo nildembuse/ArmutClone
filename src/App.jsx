@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from "./componet/Navbar";
+import Footer from './componet/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,9 +9,8 @@ function App() {
   return (
     <>
      <Navbar />
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     
+     <Footer />
     </>
   )
 }
