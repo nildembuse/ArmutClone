@@ -16,6 +16,12 @@ export default function Navbar() {
           <li>Organizasyon</li>
           <li>Diğer</li>
       </ul>
+      <div className='back-img'></div>
+        
+        <div className="wrapper">
+          <h1 className="widow-fix">Hizmet Piş, Ağzıma&nbsp;Düş</h1>
+          <h2 className="widow-fix">İhtiyacın olan hizmete kolayca ulaş, bekleyen işlerini&nbsp;hallet</h2>
+        </div>
       </div>
       <div className='button'>
         <ul className='but-liste'>
@@ -29,18 +35,12 @@ export default function Navbar() {
             <a href="" className='but'>GİRİŞ</a>
           </li>
         </ul>
+        
       </div>
-      <section>
-        <div className='hero back-img tr'>
-          <div className='back-img'></div>
-        </div>
-        <div className="wrapper">
-          <h1 className="widow-fix">Hizmet Piş, Ağzıma&nbsp;Düş</h1>
-          <h2 className="widow-fix">İhtiyacın olan hizmete kolayca ulaş, bekleyen işlerini&nbsp;hallet</h2>
-          
-        </div>
       
-      </section>
+         
+      
+      
         </>
     )
 }
