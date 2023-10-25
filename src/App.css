@@ -68,9 +68,8 @@
   color: green;
 }
 
-.back-img tr {
-  background-image: url(/src/img/hero.jpeg);
-}
+/* .back-img tr {
+} */
 .back-img {
     height: 100%;
     position: absolute;
@@ -78,6 +77,8 @@
     overflow: hidden;
     background-position: center center;
     background-size: cover;
+  background-image: url(./img/hero.jpeg);
+
 }
 .wrapper{
   padding: 21px 0 15px 0;
