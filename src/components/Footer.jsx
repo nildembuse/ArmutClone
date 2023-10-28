@@ -9,8 +9,8 @@ const Footer = () => {
         <div className='footerDesc'>
           <div className='footerComment'>
             <section>
-              <h6 className='downloadGetirApplication'>En Çok Aranan </h6>
-              <nav className='downloadGetirApplicationIcon'>
+              <h6 className='armutFooter'>En Çok Aranan </h6>
+              <nav className='armutFooterYazilar'>
                 <a href="#">
                   <p>İstanbul Boş Ev Temizliği</p>
                 </a>
@@ -40,7 +40,7 @@ const Footer = () => {
             </section>
 
             <section>
-              <h6 className='downloadGetirApplication'>Bilgi</h6>
+              <h6 className='armutFooter'>Bilgi</h6>
               <nav className='footerFirstStatemenet' >
                 <a href="#"><p2 className="statment">Nasıl Çalışır?</p2><br /></a>
                 <a href="#"><p2 className="statment">İletişim</p2><br /></a>
@@ -51,7 +51,7 @@ const Footer = () => {
             </section>
 
             <section>
-              <h6 className='downloadGetirApplication'>Hizmetler</h6>
+              <h6 className='armutFooter'>Hizmetler</h6>
               <nav className='footerFirstStatemenet' >
                 <a href="#"><p2 className="statment">Ev Temizliğir</p2><br /></a>
                 <a href="#"><p2 className="statment">Evden Eve Nakliyat</p2><br /></a>
@@ -62,7 +62,7 @@ const Footer = () => {
             </section>
 
             <section>
-              <h6 className='downloadGetirApplication'>Fiyatlar</h6>
+              <h6 className='armutFooter'>Fiyatlar</h6>
               <nav className='footerFirstStatemenet' >
                 <a href="#"><p2 className="statment">Ev Temizliği Fiyatları</p2><br /></a>
                 <a href="#"><p2 className="statment">Evden Eve Nakliyat Fiyatları</p2><br /></a>
