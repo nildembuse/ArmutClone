@@ -13,6 +13,7 @@ header.masthead {
   padding-bottom: 8rem;
   background: no-repeat center center;
   background-size: cover;
+  background-image: url(/src/img/hero.jpeg);
 }
 header.masthead:before {
   content: "";
@@ -21,7 +22,7 @@ header.masthead:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/src/img/hero.jpeg);
+ 
 }
 header.masthead .page-heading,
 header.masthead .post-heading,
@@ -30,11 +31,7 @@ header.masthead .site-heading {
   text-align: center;
 }
 
-header.masthead .page-heading h1, header.masthead .page-heading .h1,
-header.masthead .site-heading h1,
-header.masthead .site-heading .h1 {
-  font-size: 3rem;
-}
+
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
   font-size: 1.5rem;
@@ -44,9 +41,7 @@ header.masthead .site-heading .subheading {
   margin-top: 0.625rem;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-header.masthead .post-heading h1, header.masthead .post-heading .h1 {
-  font-size: 2.25rem;
-}
+
 header.masthead .post-heading .meta,
 header.masthead .post-heading .subheading {
   line-height: 1.1;
@@ -58,15 +53,13 @@ header.masthead .post-heading .subheading {
   margin: 0.75rem 0 2rem;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-header.masthead .post-heading .meta {
+header.masthead .post-heading  {
   font-size: 1.25rem;
   font-weight: 300;
   font-style: italic;
   font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-header.masthead .post-heading .meta a {
-  color: #fff;
-}
+
 @media (min-width: 992px) {
   header.masthead {
     padding-top: 12.5rem;
@@ -291,6 +284,10 @@ header.masthead .post-heading .meta a {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+.container img {
+  width: 25px;
+  height: 25px;
 }
 
 .navbar-brand {
