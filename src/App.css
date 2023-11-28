@@ -6,45 +6,87 @@
 }
 
 /* navbar kısmı baslangıc */
-.logo{
-  display: flex;
-  width: 120px;
-  margin-top: 1px ;
+header.masthead {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-top: calc(8rem + 57px);
+  padding-bottom: 8rem;
+  background: no-repeat center center;
+  background-size: cover;
 }
-.navbar ul{
-  display: flex;
-  width: 1070px;
-  height: 58px;
-  margin-left: 150px;
-  margin-bottom: 400px;
-}
-.linkler li{
-  display: flex;
-  justify-content: center;
-  color: black;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-left: 15px;
-  text-decoration: none;
-
-}
-
-.button{
-  display: flex;
-  height: 36px;
+header.masthead:before {
+  content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   right: 0;
-  top: 32px;
+  bottom: 0;
+  background-image: url(/src/img/hero.jpeg);
+}
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+  color: #fff;
+}
+header.masthead .page-heading,
+header.masthead .site-heading {
+  text-align: center;
+}
+header.masthead .page-heading h1, header.masthead .page-heading .h1,
+header.masthead .site-heading h1,
+header.masthead .site-heading .h1 {
+  font-size: 3rem;
+}
+header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin-top: 0.625rem;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .post-heading h1, header.masthead .post-heading .h1 {
+  font-size: 2.25rem;
+}
+header.masthead .post-heading .meta,
+header.masthead .post-heading .subheading {
+  line-height: 1.1;
+  display: block;
+}
+header.masthead .post-heading .subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.75rem 0 2rem;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .post-heading .meta {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .post-heading .meta a {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: 12.5rem;
+    padding-bottom: 12.5rem;
+  }
+  header.masthead .page-heading h1, header.masthead .page-heading .h1,
+  header.masthead .site-heading h1,
+  header.masthead .site-heading .h1 {
+    font-size: 5rem;
+  }
+  header.masthead .post-heading h1, header.masthead .post-heading .h1 {
+    font-size: 3.5rem;
+  }
+  header.masthead .post-heading .subheading {
+    font-size: 1.875rem;
+  }
 }
 
-.but-liste {
-  padding-left: 0;
-  margin-left: -5px;
-  list-style: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
 .but{
   border: 1px solid #fff;
   color: #fff;
@@ -68,39 +110,54 @@
   color: green;
 }
 
-
-.back-img {
-    height: 400px;
-    position: absolute;
-    width: 1280px;
-    overflow: hidden;
-    background-position: center center;
-    background-size: cover;
-    background-image: url(./img/hero.jpeg);
-
-}
-.wrapper{
-  padding: 21px 0 15px 0;
-    text-align: center;
-    position: relative;
-    z-index: 10;
-    max-width: 1200px;
-}
-.hero h1{
-  color: #fff;
-}
-.hero h2{
-  color: #fff;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 34px;
-    margin-top: 0;
+.section-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-top: 3.75rem;
 }
 
-.window-fix {
-  margin-top: 15px;
+.caption {
+  font-size: 0.875rem;
+  font-style: italic;
+  display: block;
+  margin: 0;
+  padding: 0.625rem;
+  text-align: center;
+}
+
+.post-preview > a {
+  color: #212529;
+}
+.post-preview > a:focus, .post-preview > a:hover {
+  text-decoration: none;
+  color: #0085A1;
+}
+.post-preview > a > .post-title {
+  font-size: 1.875rem;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+.post-preview > a > .post-subtitle {
+  font-weight: 300;
+  margin-bottom: 0.625rem;
+}
+.post-preview > .post-meta {
+  font-size: 1.125rem;
+  font-style: italic;
+  margin-top: 0;
+  color: #6c757d;
+}
+.post-preview > .post-meta > a {
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  .post-preview > a > .post-title {
+    font-size: 2.25rem;
+  }
 }
 /* navbar kısmı bitisi */
+
+
 
 
 /* .logo:hover {
@@ -123,6 +180,15 @@
 
 
 /* Footer Kısmı Baslangıc */
+
+footer {
+  width: 1349px;
+  height: 425px;
+  background: #404259 ;
+  margin-top: 10px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
 .footerDesc {
   width: 1349px;
