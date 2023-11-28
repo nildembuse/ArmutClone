@@ -124,5 +124,62 @@
 
 /* Footer Kısmı Baslangıc */
 
+.footerDesc {
+  width: 1349px;
+  height: 425px;
+  margin: 0 auto;
+}
+
+.footerComment {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.armutFooter {
+  color: black;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 16px;
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.armutFooterYazilar {
+  display: flex;
+  color: black;
+  row-gap: 8px;
+  margin-left: 100px;
+  width: 130px;
+  
+}
+
+.footerFirstStatemenet {
+  display: grid;
+  align-items: center;
+  margin-left: 100px;
+  margin-bottom: 25px;
+}
+
+.statment {
+  display: grid;
+}
+
+.footerFirstStatemenet a {
+  text-decoration: none;
+  color: #191919;
+}
+
+.lowerFooter {
+  display: grid;
+  justify-content: space-between;
+  width: 340%;
+  margin-top: 5px;
+  margin-left: 100px;
+  margin-bottom: 25px;
+  gap: 12px;
+}
 
 /* Footer Kısmı Bitis */
