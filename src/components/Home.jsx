@@ -23,6 +23,7 @@ export default function Home () {
                      <div className="col-md-10 col-lg-8 col-xl-7">
                     
                         <div className="post-preview">
+                           
                             <Container/>
                             <Content/>
                             <User/>
