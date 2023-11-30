@@ -1,6 +1,7 @@
 import Container from "./Container"
 import Content from "./Content"
 import User from "./User"
+import Services from "./Services"
 export default function Home () {
     return(
         <>
@@ -26,6 +27,7 @@ export default function Home () {
                            
                             <Container/>
                             <Content/>
+                            <Services />
                             <User/>
                         </div>
                    
