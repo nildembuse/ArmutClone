@@ -4,8 +4,6 @@ export default  function Content() {
 
     return(
         <div className="values">
-           
-           
                <div className="values_text">
                     <h3>Kaliteli Hizmet Al</h3>
                     <p>Teklif aldığın hizmet verenlerin kalitesini daha önceki işlerinde aldıkları <br /> gerçek müşteri yorumları sayesinde görür, güvenle kararını verirsin.</p>
@@ -38,5 +36,6 @@ export default  function Content() {
                     <img src="/src/img/save-time.jpg" alt="" />
                 </div>
         </div>
+
     )
 }
