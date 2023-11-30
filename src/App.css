@@ -13,17 +13,9 @@ header.masthead {
   padding-bottom: 8rem;
   background: no-repeat center center;
   background-size: cover;
- /* background-image: url(/src/img/hero.jpeg); */ 
+  background-image: url(/src/img/hero.jpeg); 
 }
-header.masthead:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(/src/img/hero.jpeg);
-}
+
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
