@@ -13,7 +13,7 @@ header.masthead {
   padding-bottom: 8rem;
   background: no-repeat center center;
   background-size: cover;
-  background-image: url(/src/img/hero.jpeg);
+ /* background-image: url(/src/img/hero.jpeg); */ 
 }
 header.masthead:before {
   content: "";
@@ -22,7 +22,7 @@ header.masthead:before {
   left: 0;
   right: 0;
   bottom: 0;
- 
+  background-image: url(/src/img/hero.jpeg);
 }
 header.masthead .page-heading,
 header.masthead .post-heading,
@@ -79,8 +79,8 @@ header.masthead .post-heading  {
 }
 
 .but{
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid var(--headerbeprobutton);
+  color: var(--headerbeprobutton);
   font-size: 14px;
   padding: 5px 10px;
   font-weight: 700;
@@ -160,6 +160,7 @@ header.masthead .post-heading  {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+ 
 }
 
 .nav-link {
@@ -284,6 +285,8 @@ header.masthead .post-heading  {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+ 
+ 
 }
 .container img {
   width: 25px;
