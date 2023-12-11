@@ -10,14 +10,14 @@ export default function Services() {
                 <p>İhtiyacına özel soruları cevapla ve iletişim bilgilerini gir. İstersen iletişim bilgilerini gizli tut.</p>
             </div>
 
-            <div className="servis-first">
+            <div className="servis-second">
                 <span>2</span>
                 <h2>ÖZEL FİYAT TEKLİFLERİ AL</h2>
                 <span className="green-line"></span>
                 <p>İşinle ilgilenen ve müsait olan profesyonellere ihtiyacını bildirelim, ihtiyacına özel teklif al.</p>
             </div>
 
-            <div className="servis-first">
+            <div className="servis-third">
                 <span>3</span>
                 <h2>KARŞILAŞTIR VE SEÇ</h2>
                 <span className="green-line"></span>
