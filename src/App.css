@@ -760,22 +760,51 @@ header.masthead .post-heading  {
 }
 .services{
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.servis-first{
-  background-image: url(/src/img/servis1.jpg);
+.services img {
+  width: 250px;
+  height: 350px;
+}
+.services span{
+  color: green;
+  
 }
 
-.servis-second{
-  background-image: url(/src/img/servis2.jpg);
+.populer-hiz {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-left: 100px;
+  margin-bottom: 25px;
 }
 
-.servis-third{
-  background-image: url(/src/img/servis3.jpg);
+.statment {
+  display: grid;
 }
 
+.populer-hiz a {
+  text-decoration: none;
+  color: green;
+}
 
+.en-yakin {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-left: 100px;
+  margin-bottom: 25px;
+}
 
+.statment {
+  display: grid;
+}
+
+.en-yakin a {
+  text-decoration: none;
+  color: green;
+}
 /* Footer Kısmı Baslangıc */
 
 footer {

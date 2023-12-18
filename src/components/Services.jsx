@@ -4,6 +4,7 @@ export default function Services() {
         <div className="hard-brad">
             <div className="services">
                 <div className="servis-first">
+                    <img src="/src/img/servis1.jpg" alt="" /> <br />
                     <span>1</span>
                     <h2>İHTİYACINI BİRKAÇ SORUDAN ANLAT</h2>
                     <span className="green-line"></span>
@@ -11,6 +12,7 @@ export default function Services() {
                 </div>
 
                 <div className="servis-second">
+                    <img src="/src/img/servis2.jpg" alt="" /> <br />
                     <span>2</span>
                     <h2>ÖZEL FİYAT TEKLİFLERİ AL</h2>
                     <span className="green-line"></span>
@@ -18,6 +20,7 @@ export default function Services() {
                 </div>
 
                 <div className="servis-third">
+                    <img src="/src/img/servis3.jpg" alt="" /> <br />
                     <span>3</span>
                     <h2>KARŞILAŞTIR VE SEÇ</h2>
                     <span className="green-line"></span>
@@ -26,7 +29,7 @@ export default function Services() {
             </div>
                 <h2>POPÜLER HİZMETLER</h2>
             <section>
-                  <nav className='footerFirstStatemenet' >
+                  <nav className='populer-hiz' >
                     <a href="#"><p2 className="statment">Boş Ev Temizliği</p2><br /></a>
                     <a href="#"><p2 className="statment">Boyacı (Boya Badana Ustası)</p2><br /></a>
                     <a href="#"><p2 className="statment">Demirdöküm Kombi Servisi</p2><br />  </a>
@@ -37,7 +40,7 @@ export default function Services() {
                 </section>
 
                 <section>
-                  <nav className='footerFirstStatemenet' >
+                  <nav className='populer-hiz' >
                     <a href="#"><p2 className="statment">Elektrikçi</p2><br /></a>
                     <a href="#"><p2 className="statment">Parça Eşya Taşıma</p2><br /></a>
                     <a href="#"><p2 className="statment">Ev Dekorasyonu</p2><br />  </a>
@@ -47,7 +50,7 @@ export default function Services() {
                   </nav>
                 </section>
                 <section>
-                  <nav className='footerFirstStatemenet' >
+                  <nav className='populer-hiz' >
                     <a href="#"><p2 className="statment">Fotoğrafçı</p2><br /></a>
                     <a href="#"><p2 className="statment">Grafik Tasarımı</p2><br /></a>
                     <a href="#"><p2 className="statment">Halı Yıkama Temizleme</p2><br />  </a>
@@ -60,7 +63,7 @@ export default function Services() {
                 <div className="yakin-hizmet">
                         <h2>EN YAKIN HİZMETLER</h2>
                     <section>
-                        <nav className='footerFirstStatemenet' >
+                        <nav className='en-yakin' >
                             <a href="#"><p2 className="statment">istanbul</p2><br /></a>
                             <a href="#"><p2 className="statment">Adana</p2><br /></a>
                             <a href="#"><p2 className="statment">Balıkesir</p2><br />  </a>
@@ -69,7 +72,7 @@ export default function Services() {
                         </nav>
                     </section>
                     <section>
-                        <nav className='footerFirstStatemenet' >
+                        <nav className='en-yakin' >
                             <a href="#"><p2 className="statment">Ankara</p2><br /></a>
                             <a href="#"><p2 className="statment">Antalya</p2><br /></a>
                             <a href="#"><p2 className="statment">Bursa</p2><br />  </a>
@@ -78,7 +81,7 @@ export default function Services() {
                         </nav>
                     </section>
                     <section>
-                        <nav className='footerFirstStatemenet' >
+                        <nav className='en-yakin' >
                             <a href="#"><p2 className="statment">İzmir</p2><br /></a>
                             <a href="#"><p2 className="statment">Aydın</p2><br /></a>
                             <a href="#"><p2 className="statment">Çanakkale</p2><br />  </a>
