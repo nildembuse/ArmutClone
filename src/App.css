@@ -758,10 +758,21 @@ header.masthead .post-heading  {
   }
 
 }
+.services{
+  display: grid;
+}
 
+.servis-first{
+  background-image: url(/src/img/servis1.jpg);
+}
 
+.servis-second{
+  background-image: url(/src/img/servis2.jpg);
+}
 
-
+.servis-third{
+  background-image: url(/src/img/servis3.jpg);
+}
 
 
 
