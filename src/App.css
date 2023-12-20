@@ -717,11 +717,7 @@ header.masthead .post-heading  {
 
 }
 
-.values {
-  background-position: bottom center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+
 
 .values_text {
   padding: 16px;
@@ -736,28 +732,6 @@ header.masthead .post-heading  {
   height: 250px;
 }
 
-@media screen and (min-width: 767px) {
-  .values {
-    background-position:right center;
-    background-size: auto;
-    padding-bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .values_text {
-      width: 45%;
-  }
-
-  .values_image {
-      width: 50%;
-  }
-
-}
 .services{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
