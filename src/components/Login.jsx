@@ -1,13 +1,8 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
-
 import { supabase } from './main'
 
-function getRandomColor() {
-    return Math.floor(Math.random() * 999999);
-}
 
 function LoginRegister() {
     const [suggestRegister, setSuggestRegister] = useState(false)
