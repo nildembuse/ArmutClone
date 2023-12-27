@@ -1,7 +1,18 @@
 import Footer from "./Footer";
 import "/src/App.css"
 import { Link, Outlet, useNavigation } from "react-router-dom"
+import { supabase } from "../main";
 export default  function Header() {
+    const [user, setUser] = useState(null)
+  
+    useEffect(() => {
+      
+      supabase.auth.onAuthStateChange((event, session) => {
+        //setUser(session?.user);
+         setUser(session?.user)
+      })
+      
+    }, [])
 
     return(
         <div>
@@ -26,7 +37,15 @@ export default  function Header() {
                         <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4"to= {"/"}>DİĞER</Link></li>
                         <li><a href="" className='but'>YARDIM</a></li>
                         <li><a href="" className='but-yesil'>HİZMET VER</a></li>
-                        <li><a href="" className='but'>GİRİŞ</a></li>
+                        <li> 
+                            {
+                                user ? 
+                                <>{user.user_metadata.name} <button onClick={() => supabase.auth.signOut()}>Çıkış Yap</button></>
+                                : <>
+                                    <Link to='/register'>Kayıt Ol</Link> / <Link to='/login'>Giriş Yap</Link>
+                                    </>
+                             }
+                        </li>
 
                     </ul>
                 </div>
