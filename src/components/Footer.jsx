@@ -8,36 +8,6 @@ export default  function Footer() {
        <footer>
             <div className='footerDesc'>
               <div className='footerComment'>
-                <section>
-                  <h6 className='armutFooter'>En Çok Aranan </h6>
-                  <nav className='armutFooterYazilar'>
-                    <a href="#">
-                      <p>İstanbul Boş Ev Temizliği</p>
-                    </a>
-                    <a href="#">
-                        <p>İstanbul Boyacı(Boya Badana Ustası)</p>
-                    </a>
-                    <a href="#">
-                        <p>İstanbul Parça Eşya Taşıma</p>
-                    </a>
-                    <a href="#">
-                        <p>İstanbul Ev Temizliği</p>
-                    </a> 
-                     <a href="#">
-                        <p>Ankara Evden Eve Nakliyat</p>
-                    </a>
-                    <a href="#">
-                        <p>İzmir Evden Eve Nakliyat</p>
-                    </a>
-                    <a href="#">
-                        <p>İstanbul Evden Eve Nakliyat</p>
-                    </a>
-                    <a href="#">
-                        <p>İstanbul Şehirler Arası Nakliyat</p>
-                    </a>
-                    
-                  </nav>
-                </section> 
     
                 <section>
                   <h6 className='armutFooter'>Bilgi</h6>
