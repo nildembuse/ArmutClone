@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { supabase } from './main'
+import { supabase } from "../main";
 
 
-function LoginRegister() {
+function Login() {
     const [suggestRegister, setSuggestRegister] = useState(false)
     const isRegister = location.pathname === '/register';
 
@@ -66,26 +66,22 @@ function LoginRegister() {
             
             navigate('/');
         }
-
-
-
-
     }
     
-
     return (
         <div>
-            <h1>{ isRegister ? <><Link to="/login">Giriş Yap</Link> / Kayıt Ol</> : <>Giriş Yap / <Link to="/register">Kayıt Ol</Link></> }</h1>
+            
+            {<h1>{ isRegister ? <><Link to="/login">Giriş Yap</Link> / Kayıt Ol</> : <>Giriş Yap / <Link to="/register">Kayıt Ol</Link></> }</h1>}
             <form onSubmit={register}>
                 {isRegister && <p><input required type="text" name='name' placeholder='Adınız' /></p>}
                 <p><input required type="email" name='email' placeholder='E-Posta' /></p>
                 <p><input required type="password" name='password' placeholder='Şifre' /></p>
-                {isRegister && <p>Favori Renginiz: <input type="color" name="color" defaultValue={'#' + getRandomColor()} /></p>}
                 <button>{isRegister ? 'Kayıt Ol' : 'Giriş Yap'}</button>
             </form>
             {suggestRegister && <p style={{color:'red'}}>Kullanıcı bulunamadı. <Link to="/register">Kayıt ol</Link>mak ister misin?</p>}
-        </div>
+            
+     </div>
     )
 } 
 
-export default LoginRegister
+export default Login
