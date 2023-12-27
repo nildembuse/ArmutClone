@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { supabase } from "../main";
 import '../App.css';
@@ -12,9 +11,8 @@ function Login() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if(isRegister) { 
-            setSuggestRegister(false)
-        }
+        isRegister  && setSuggestRegister(false)
+        
     })
 
     async function register(e) {
