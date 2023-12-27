@@ -1,7 +1,23 @@
 import Footer from "./Footer";
 import "/src/App.css"
-import { Link, Outlet, useNavigation } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 import { supabase } from "../main";
+
+async function login(){
+    const userName = prompt('Kullanıcı Adı (E-posta olacak)');
+    const password = prompt('Şifren');
+
+    const { data, error } = await supabase.auth.signInWithPassword({
+        email: userName,
+        password: password,
+    })
+
+    console.log(data);
+    console.log(error);
+
+}
+
+
 export default  function Header() {
     const [user, setUser] = useState(null)
   
@@ -10,6 +26,9 @@ export default  function Header() {
       supabase.auth.onAuthStateChange((event, session) => {
         //setUser(session?.user);
          setUser(session?.user)
+
+         setVisible(true);
+
       })
       
     }, [])
@@ -37,15 +56,7 @@ export default  function Header() {
                         <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4"to= {"/"}>DİĞER</Link></li>
                         <li><a href="" className='but'>YARDIM</a></li>
                         <li><a href="" className='but-yesil'>HİZMET VER</a></li>
-                        <li> 
-                            {
-                                user ? 
-                                <>{user.user_metadata.name} <button onClick={() => supabase.auth.signOut()}>Çıkış Yap</button></>
-                                : <>
-                                    <Link to='/register'>Kayıt Ol</Link> / <Link to='/login'>Giriş Yap</Link>
-                                    </>
-                             }
-                        </li>
+                        <li> <a href="" className='but' onClick={() => login}>GİRİŞ</a></li>
 
                     </ul>
                 </div>
@@ -57,10 +68,3 @@ export default  function Header() {
     )
 }
 
-function Indicator() {
-    const navigation = useNavigation();
-    const text = navigation.state === 'loading' && 'Yükleniyor';
-    return (
-        <h3 style={{ position: 'fixed', top: 10, left: 10, color: 'black', zIndex: 1 }}>{text}</h3>
-    )
-}

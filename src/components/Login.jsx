@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { supabase } from "../main";
+import '../App.css';
 
 
 function Login() {
@@ -69,16 +70,17 @@ function Login() {
     }
     
     return (
-        <div>
+        <div className='logContainer'>
             
-            {<h1>{ isRegister ? <><Link to="/login">Giriş Yap</Link> / Kayıt Ol</> : <>Giriş Yap / <Link to="/register">Kayıt Ol</Link></> }</h1>}
-            <form onSubmit={register}>
-                {isRegister && <p><input required type="text" name='name' placeholder='Adınız' /></p>}
-                <p><input required type="email" name='email' placeholder='E-Posta' /></p>
-                <p><input required type="password" name='password' placeholder='Şifre' /></p>
-                <button>{isRegister ? 'Kayıt Ol' : 'Giriş Yap'}</button>
+            { <h1 className='loginRegister'>{isRegister   ? <><Link to='/login' >  <span className='loginRegister'> Giriş Yap</span> </Link> / <span className='loginRegister'>Kayıt Ol</span>   </> : <> <span className='loginRegister'>Giriş Yap</span> / <Link to="/register" ><span className='loginRegister'>Kayıt Ol</span>  </Link></>}</h1> }
+            <form className='regisForm' onSubmit={register} >
+                {isRegister && <p> <input type="text" name="name" placeholder='Adınız' /></p>}
+                <p><input required type="email" name="email" placeholder='E-Posta Adresiniz' /></p>
+                <p><input required type="password" name="password" placeholder='Şifreniz' /></p>
+                <button className='registerButton'> {isRegister ? 'Kayıt Ol' : 'Giriş Yap'} </button>
+
             </form>
-            {suggestRegister && <p style={{color:'red'}}>Kullanıcı bulunamadı. <Link to="/register">Kayıt ol</Link>mak ister misin?</p>}
+            {suggestRegister && <p className='notRegister' style={{ color: 'red' }}>Kullanıcı Bulunamadı <Link className='click' to="/register">Kayıt Olmak İçin Tıkla </Link></p>}
             
      </div>
     )
