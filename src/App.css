@@ -788,7 +788,7 @@ header.masthead .post-heading  {
   font-family: Roboto;
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(120deg, #110982, #ae31d0);
+  background: linear-gradient(120deg, #24610b, #33b333);
   height: 100vh;
   overflow: hidden;
 }
@@ -796,8 +796,8 @@ header.masthead .post-heading  {
 .registerButton{
   position: static;
   display: block;
-  background-color: #5c3cbb;
-  color: #ffd300;
+  background-color: #48ec56;
+  color: #137e18;
   cursor: pointer;
   margin: 50px 630px;
   width: 250px;
@@ -825,13 +825,13 @@ header.masthead .post-heading  {
 }
 .logContainer h1 {
   text-decoration-color: black     ;
-  color: #ffd300;
+  color: #fff;
  list-style:none;
   margin: 50px 600px;
 }
 .logContainer span {
  
-  color: #ffd300;
+  color: #fff;
  list-style:none;
 }
 .logContainer span:hover{
