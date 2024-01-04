@@ -21,19 +21,14 @@ async function login(){
 
 export default  function Header() {
     const [user, setUser] = useState(null)
-  
-    useEffect(() => {
-      
-      supabase.auth.onAuthStateChange((event, session) => {
-        //setUser(session?.user);
-         setUser(session?.user)
 
-         setVisible(true);
+  useEffect(() => {
+    supabase.auth.onAuthStateChange((event, session) => {
+      // setUser(session?.user);
+      setUser(session?.user.user_metadata.name)
+    })
 
-      })
-      
-    }, [])
-
+  }, [])
     return(
         <div>
           
@@ -57,7 +52,7 @@ export default  function Header() {
                         <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4"to= {"/"}>DİĞER</Link></li>
                         <li><a href="" className='but'>YARDIM</a></li>
                         <li><a href="" className='but-yesil'>HİZMET VER</a></li>
-                        <li> <a href="" className='but' onClick={() => login}>GİRİŞ</a></li>
+                        <li> <a href="" className='but' to="/login" onClick={() => login}>GİRİŞ</a></li>
 
                     </ul>
                 </div>
