@@ -7,38 +7,27 @@ import { supabase } from "../main";
 async function login(){
     const userName = prompt('Kullanıcı Adı (E-posta olacak)');
     const password = prompt('Şifren');
-
     const { data, error } = await supabase.auth.signInWithPassword({
         email: userName,
         password: password,
     })
-
-    console.log(data);
-    console.log(error);
-
 }
-
-
 export default  function Header() {
     const [user, setUser] = useState(null)
-
-  useEffect(() => {
+    useEffect(() => {
     supabase.auth.onAuthStateChange((event, session) => {
-      // setUser(session?.user);
       setUser(session?.user.user_metadata.name)
     })
-
   }, [])
     return(
-        <div>
-          
+        <div>  
             <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div className="container ">
                 <img src="/src/img/elma.svg.png"  alt="" />
                 <Link to={"/"} className="navbar-brand" href="index.html">ELMA</Link>
                 <button  className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
-                    <i className="fas fa-bars"></i>
+                <i className="fas fa-bars"></i>
                 </button>
                 <div  className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ">
