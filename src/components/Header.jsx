@@ -41,7 +41,7 @@ export default  function Header() {
                         <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4"to= {"/"}>DİĞER</Link></li>
                         <li><a href="" className='but'>YARDIM</a></li>
                         <li><a href="" className='but-yesil'>HİZMET VER</a></li>
-                        <li> <a href="" className='but' to="/login" onClick={() => login}>GİRİŞ</a></li>
+                        <li> <Link className='but' to="/login" onClick={() => login}>GİRİŞ</Link></li>
 
                     </ul>
                 </div>

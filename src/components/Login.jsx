@@ -44,12 +44,7 @@ function Login() {
                 return;
             }
             
-            user.id = data.user.id
             
-            const { data: profileData, error: profileError } = await supabase
-                .from('profiles')
-                .insert([user])
-                .select()
         
             navigate('/')
         } else {
