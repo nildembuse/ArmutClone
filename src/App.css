@@ -671,17 +671,26 @@ header.masthead .post-heading  {
 
 }
 
+.values{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  margin-top: 35px;
+}
+
 .values_text {
   padding: 16px;
+  text-align: center;
+  align-items: center;
 }
 
 .values_image {
-  text-align: center;
+  text-align: right;
 }
 
 .values_image img {
-  width: 450px;
-  height: 250px;
+  width: 550px;
+  height: 350px;
 }
 
 .services{
