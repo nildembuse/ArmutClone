@@ -42,6 +42,8 @@ export default  function Header() {
                         <li><a href="" className='but'>YARDIM</a></li>
                         <li><a href="" className='but-yesil'>HİZMET VER</a></li>
                         <li> <Link className='but' to="/login" onClick={() => login}>GİRİŞ</Link></li>
+                        <li> <Link className='but' to="/register">KAYIT OL</Link></li>
+
 
                     </ul>
                 </div>

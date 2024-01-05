@@ -9,12 +9,9 @@ function Login() {
     const isRegister = location.pathname === '/register';
 
     const navigate = useNavigate();
-
     useEffect(() => {
         isRegister  && setSuggestRegister(false)
-        
     })
-
     async function register(e) {
         e.preventDefault();
         const formData = new FormData(e.target);
@@ -40,12 +37,8 @@ function Login() {
                 else {
                     alert('hatalı veya eksik girildi.');
                 }
-                
                 return;
             }
-            
-            
-        
             navigate('/')
         } else {
             const { data, error } = await supabase.auth.signInWithPassword({
@@ -57,7 +50,6 @@ function Login() {
                 setSuggestRegister(true)
                 return;
             }
-            
             navigate('/');
         }
     }
@@ -65,7 +57,7 @@ function Login() {
     return (
         <div className='logContainer'>
             
-            { <h1 className='loginRegister'>{isRegister   ? <><Link to='/login' >  <span className='loginRegister'> Giriş Yap</span> </Link> / </> : <> <span className='loginRegister'>Giriş Yap</span> / <Link to="/register" ><span className='loginRegister'>Kayıt Ol</span>  </Link></>}</h1> }
+            { <h1 className='loginRegister'>{isRegister   ? <><Link to='/login' > <span className='loginRegister'> Giriş Yap</span> </Link> / <span className='loginRegister'>Kayıt Ol</span> </> : <> <span className='loginRegister'>Giriş Yap</span> / <Link to="/register" ><span className='loginRegister'>Kayıt Ol</span>  </Link></>}</h1> }
             <form className='regisForm' onSubmit={register} >
                 {isRegister && <p> <input type="text" name="name" placeholder='Adınız' /></p>}
                 <p><input required type="email" name="email" placeholder='E-Posta Adresiniz' /></p>
@@ -74,7 +66,6 @@ function Login() {
 
             </form>
             {suggestRegister && <p className='notRegister' style={{ color: 'red' }}>Kullanıcı Bulunamadı <Link className='click' to="/register">Kayıt Olmak İçin Tıkla </Link></p>}
-            
      </div>
     )
 } 

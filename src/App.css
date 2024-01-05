@@ -778,10 +778,6 @@ header.masthead .post-heading  {
   color: green;
 }
 
-
-
-
-
 .logContainer{
   margin: 0;
   padding: 0;
@@ -789,7 +785,8 @@ header.masthead .post-heading  {
   background-repeat: no-repeat;
   background-size: cover;
   background: linear-gradient(120deg, #24610b, #33b333);
-  height: 100vh;
+  height: 470px;
+  width: 1249px;
   overflow: hidden;
 }
 
@@ -799,7 +796,7 @@ header.masthead .post-heading  {
   background-color: #48ec56;
   color: #137e18;
   cursor: pointer;
-  margin: 50px 630px;
+  margin: 20px 530px;
   width: 250px;
   height: 50px;
 }
@@ -808,56 +805,64 @@ header.masthead .post-heading  {
   opacity: 0.75;
   transition: 0.5ms;
 }
+
 .regisForm {
-  margin-top: 150px;
+  margin-top: 90px;
 }
+
 .regisForm p input {
   display: flex;
   align-items: center;
-  margin: 5px 750px;
-  width: 250px;
+  margin: 5px 650px;
+  width: 150px;
   height: 50px;
   transform: translate(-50%, -50%);
-  width: 29vw;
+  width: 25vw;
   background: white;
   border-radius: 10px;
+}
 
-}
 .logContainer h1 {
-  text-decoration-color: black     ;
+  text-decoration-color: black;
   color: #fff;
- list-style:none;
-  margin: 50px 600px;
+  list-style:none;
+  margin: 20px 400px;
 }
+
 .logContainer span {
- 
   color: #fff;
- list-style:none;
+  list-style:none;
 }
+
 .logContainer span:hover{
  color: black;
  opacity: 0.75;
  transition: 0.10ms;
 }
+
 .notRegister{
   margin: 5px 590px;
 }
+
 .contunie{
   list-style: none;
   text-decoration: none;
 }
+
 .click{
   color: #ffd300;
-text-decoration: none;
+  text-decoration: none;
 }
+
 .signOuts{
   color: rgb(219, 219, 255);
   background-color: #5c3cbb;
   border:none;
- margin-top: 20px ;
- padding-right: 55px;
- cursor: pointer;
+  margin-top: 20px ;
+  padding-right: 55px;
+  cursor: pointer;
 }
+
 .headUser{
   font-size: 25px;
   color: #ffd300;
@@ -876,8 +881,8 @@ text-decoration: none;
 /* Footer Kısmı Baslangıc */
 
 footer {
-  width: 1349px;
-  height: 425px;
+  width: 1249px;
+  height: 350px;
   background: #404259 ;
   margin-top: 10px;
   padding-top: 3rem;
@@ -940,6 +945,11 @@ footer {
   margin-left: 100px;
   margin-bottom: 25px;
   gap: 12px;
+}
+
+.haklari{
+  display: flex;
+  justify-content: center;
 }
 
 /* Footer Kısmı Bitis */

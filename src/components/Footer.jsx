@@ -41,8 +41,8 @@ export default  function Footer() {
                     <a href="#"><p2 className="statment">İngilizce Özel Ders Fiyatları</p2></a>
                   </nav>
                   
-                </section>
-                <p> 2023 Armut.com Benzeri E-Ticaret Sitesi</p>
+                </section> <br />
+                <p className="haklari"> 2023 Elma.com Benzeri E-Ticaret Sitesi</p>
               </div>
             </div>
         
