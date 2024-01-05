@@ -22,7 +22,7 @@ export default  function Header() {
     return(
         <div>  
             <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
-            <div className="container ">
+            <div className="container">
                 <img src="/src/img/elma.svg.png"  alt="" />
                 <Link to={"/"} className="navbar-brand" href="index.html">ELMA</Link>
                 <button  className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,8 +43,6 @@ export default  function Header() {
                         <li><a href="" className='but-yesil'>HİZMET VER</a></li>
                         <li> <Link className='but' to="/login" onClick={() => login}>GİRİŞ</Link></li>
                         <li> <Link className='but' to="/register">KAYIT OL</Link></li>
-
-
                     </ul>
                 </div>
             </div>
