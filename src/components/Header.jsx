@@ -12,6 +12,14 @@ async function login(){
         password: password,
     })
 }
+async function register(){
+    const userName = prompt('Kullanıcı Adı (E-posta olacak)');
+    const password = prompt('Şifren');
+    const { data, error } = await supabase.auth.signInWithPassword({
+        email: userName,
+        password: password,
+    })
+}
 export default  function Header() {
     const [user, setUser] = useState(null)
     useEffect(() => {
