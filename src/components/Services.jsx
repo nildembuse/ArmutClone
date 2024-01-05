@@ -90,7 +90,7 @@ export default function Services() {
                         </nav>
                     </section>
                 </div>
-                <h1>HAYATINI KOLAYLAŞTIR</h1> <button>ARA</button>
+                <h1>HAYATINI KOLAYLAŞTIR</h1><a href="#"><button className="arama">ARA</button></a> 
         </div>
     )
 }

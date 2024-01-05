@@ -623,6 +623,29 @@ header.masthead .post-heading  {
 
 /* navbar kısmı bitisi */
 
+.teklif{
+  background-color: #33b333;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 12px 32px;
+  border-radius: 30px;
+}
+
+.teklif:hover {
+
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.arama{
+  text-align: center;
+  background-color: #33b333;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 14px 76px;
+  border-radius: 20px;
+}
 .bloklar{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

@@ -11,7 +11,6 @@ export default function Home () {
                         <div className="site-heading">
                             <h1>Hizmet Piş, Ağzıma Düş</h1>
                             <span className="subheading">İhtiyacın olan hizmete kolayca ulaş, bekleyen işlerini hallet</span>
-                            <app-root-wizard placeholder="hangi hizmeti arıyorsun?" jobsource="homepage_search" buttontext="Ara" pagescreennname="HomePageWizard" ng-version="14.2.10"><router-outlet></router-outlet><modal></modal><div loadingfield=""></div><div alert=""></div><data-collector></data-collector></app-root-wizard>
                         </div>
                     </div>
                 </div>
