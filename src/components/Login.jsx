@@ -57,7 +57,7 @@ function Login() {
     return (
         <div className='logContainer'>
             
-            { <h1 className='loginRegister'>{isRegister   ? <><Link to='/login' > <span className='loginRegister'> Giriş Yap</span> </Link> / <span className='loginRegister'>Kayıt Ol</span> </> : <> <span className='loginRegister'>Giriş Yap</span> / <Link to="/register" ><span className='loginRegister'>Kayıt Ol</span>  </Link></>}</h1> }
+            { <h1 className='loginRegister'>{isRegister ? <><Link to='/login' > <span className='loginRegister'> Giriş Yap</span> </Link> / <span className='loginRegister'>Kayıt Ol</span> </> : <> <span className='loginRegister'>Giriş Yap</span> / <Link to="/register" ><span className='loginRegister'>Kayıt Ol</span>  </Link></>}</h1> }
             <form className='regisForm' onSubmit={register} >
                 {isRegister && <p> <input type="text" name="name" placeholder='Adınız' /></p>}
                 <p><input required type="email" name="email" placeholder='E-Posta Adresiniz' /></p>

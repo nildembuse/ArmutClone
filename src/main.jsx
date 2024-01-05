@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './App.css'
-import { RouterProvider,createBrowserRouter } from 'react-router-dom'
+import { Form, RouterProvider,createBrowserRouter } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import Home from './components/Home.jsx'
 import Login from './components/Login.jsx'
@@ -29,6 +29,11 @@ const router = createBrowserRouter (
        {
         path:'/register',
         element:<Login />
+       },
+
+       {
+        path:'/form',
+        element:<Form />
        },
        
       ]
